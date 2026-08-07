@@ -192,6 +192,13 @@ footer {
 @media screen and (max-width: 767px) {
 
     body {
+        .projects-grid {
+    grid-template-columns: 1fr;
+}
+
+.project-card h3 {
+    font-size: 22px;
+}
         font-size: 16px;
     }
 
@@ -235,6 +242,9 @@ footer {
    Tablet Devices (768px–1023px)
 =========================== */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
 
     .hero h2 {
         font-size: 36px;
@@ -249,6 +259,9 @@ footer {
    Desktop Devices (1024px and above)
 =========================== */
 @media screen and (min-width: 1024px) {
+    .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
 
     .hero h2 {
         font-size: 42px;
@@ -291,4 +304,60 @@ nav a:hover{
 .skill-card:hover{
     transform:translateY(-8px);
     box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+/* Projects Section */
+
+#projects {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: blue;
+}
+
+#projects h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background-color: blue;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.project-card a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00adb5;
+    color: black;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.project-card a:hover {
+    background-color: red;
 }
