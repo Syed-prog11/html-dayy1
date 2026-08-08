@@ -361,3 +361,80 @@ nav a:hover{
 .project-card a:hover {
     background-color: red;
 }
+/* Resume Section */
+
+#resume {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: skyblue;
+}
+
+#resume h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+#resume p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.resume-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #00adb5;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.resume-button:hover {
+    background-color: #007f85;
+}
+/* Experience Section */
+
+#experience {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: lightsteelblue;
+}
+
+#experience h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.experience-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.experience-card {
+    background-color: #da3333;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.experience-card h3 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.experience-card h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.experience-date {
+    color: #00adb5;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.experience-card p {
+    line-height: 1.7;
+}
